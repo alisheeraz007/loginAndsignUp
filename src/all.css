@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0
 }
+body{
+    height: 100vh;
+    background: linear-gradient(-121deg, #0a2054 0%,#6b1c1c 50%,#0a2054 100%);
+}
 .header{
     position: absolute;
     top: 10%;
@@ -42,7 +46,7 @@
 }
 .formDiv form button{
     border: 1px solid #4267b2;
-    background-color: #4267b2;
+    background: linear-gradient(-121deg, #0a2054 0%,#6b1c1c 50%,#0a2054 100%);
     width: 85%;
     height: 45px;
     margin-top: 10px;
@@ -63,7 +67,7 @@
 .forSignUp button{
     background-color: transparent;
     border: none;
-    color: #4267b2;
+    color: #0a2054;
     font-size: 15px;
     cursor: pointer;
 }
