@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0
+}
+.header{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    font-size: 27px;
+    color: grey;
+}
+.formDiv{
+    text-align: center;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%,0);
+    box-shadow: 0 2px 26px rgba(0, 0, 0, .3), 0 0 0 1px rgba(0, 0, 0, .1);
+    background-color: white;
+    border-radius: 3px;
+    height: 480px;
+    width: 40%;
+}
+.formDiv form{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 23%);
+    width: 100%;
+}
+.formDiv form input{
+    display: block;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 82%;
+    padding: 5px;
+    padding-left: 10px;
+    border: 0.5px solid gray;
+    margin-bottom: 2px;
+}
+.formDiv form button{
+    border: 1px solid #4267b2;
+    background-color: #4267b2;
+    width: 85%;
+    height: 45px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.forSignUp{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-75% );
+    width: 100%;
+}
+.forSignUp p{
+    color: grey
+}
+.forSignUp button{
+    background-color: transparent;
+    border: none;
+    color: #4267b2;
+    font-size: 15px;
+    cursor: pointer;
+}
+.smallInput{
+    width: 39.5% !important;
+    display: inline !important;
+}
+.signUpForm{
+    top: 15% !important;
+}
+.signUp{
+    top: 90% !important;
+}
+.forgetPassword{
+    top: 35% !important;
+}
