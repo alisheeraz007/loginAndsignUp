@@ -21,15 +21,15 @@ class ForgetPassword extends Component {
         })
     }
 
-    forgetPassword = (ev) => {
+    resetPassword=(ev)=>{
         ev.preventDefault();
-        firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
-            .then((res) => {
-                alert("loggedIn")
-            })
-            .catch(function (error) {
-                console.log(error.message);
-            });
+        firebase.auth().sendPasswordResetEmail(this.state.email)
+        .then(function() {
+            alert("email sent")    
+          })
+          .catch(function(error) {
+            
+          });
     }
 
     goToSignUp = () => {
@@ -47,7 +47,7 @@ class ForgetPassword extends Component {
                     <div className="header">
                         <p>Reset Password</p>
                     </div>
-                    <form className="forgetPassword" onSubmit={(ev) => this.signIn(ev)}>
+                    <form className="forgetPassword" onSubmit={(ev) => this.resetPassword(ev)}>
                         <input
                             type="text"
                             name="email"
